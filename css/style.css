@@ -1,0 +1,44 @@
+.wrap {
+  max-width: 1440px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #131313;
+  height: 83px;
+}
+
+h1 {
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.navbar {
+  background: yellow;
+}
+
+.navbar--switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar--switcher li {
+  list-style-type: none;
+}
+
+.navbar--switcher li a {
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  .wrap {
+    max-width: 375px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
