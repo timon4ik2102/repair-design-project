@@ -1,45 +1,6 @@
-@import 'fonts.scss'
-
-$colormain: #131313;
-$displayX: flex;
-
-.wrap {
-    max-width: 1440px;
-}
-
-.header {
-    display: $displayX;
-    background: $colormain;
-    height: 83px;
-
-}
-
-h1 {
-    font-family: FuturaDemiC;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #E3B873;
-}
-
-.navbar {
-    background: yellow;
-}
-
-.navbar--switcher {
-    display: $displayX;
-
-    li {
-        list-style-type: none;
-
-        a {
-            text-decoration: none;
-        }
-    }
-}
-
-@media (max-width: 375px) {
-    .wrap {
-        max-width: 375px;
-    }
-}
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'desktop';
+@import 'laptop';
+@import 'mobile';

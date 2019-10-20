@@ -4,4 +4,25 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("../src/assets/fonts/FuturaBook/futurabookc.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  src: url("../src/assets/fonts/YesevaOne/YesevaOne-Regular_v2.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../src/assets/fonts/ProximaNova/ProximaNovaT-Thin.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 /*# sourceMappingURL=fonts.css.map */
