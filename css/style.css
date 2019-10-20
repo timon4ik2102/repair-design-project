@@ -2063,7 +2063,7 @@ input[placeholder] {
   opacity: 1;
 }
 
-@media only screen and (max-device-width: 1100px) {
+@media (max-width: 1100px) {
   .wrap {
     max-width: 1100px;
   }
@@ -3469,7 +3469,7 @@ input[placeholder] {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+@media (max-width: 768px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
