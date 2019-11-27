@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../scss/stylemobile.scss"
+    ],
+    "names": [],
+    "file": "stylemobile.min.css"
+}

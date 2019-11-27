@@ -1,0 +1,1716 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.header {
+    @include header-footer();
+}
+
+.logo {
+    width: 21%;
+    margin-left: 6%;
+
+    h1 {
+        @include head-foot-title();
+    }
+}
+
+.navbar {
+    width: 45%;
+    margin-left: 3%;
+}
+
+.navbar__switcher {
+    @include block_position;
+
+    li {
+        list-style-type: none;
+
+
+        a {
+            text-decoration: none;
+            font-family: $FuturaBook;
+            @include font_size;
+            text-transform: uppercase;
+            color: $colorwhite;
+        }
+
+        a.selected {
+            color: $colorgold;
+        }
+
+        a:hover {
+            color: $colorgold;
+        }
+
+    }
+
+
+}
+
+.call-request {
+    display: flex;
+    width: 32%;
+    padding-top: 10px;
+    margin-right: 6%;
+    margin-left: 3%;
+
+
+    &__phone {
+
+        font-family: $FuturaDemiC;
+        @include font_size;
+        text-align: right;
+        text-decoration-line: underline;
+        color: $colorgold;
+    }
+
+    &__btn {
+        width: 47%;
+        height: 36px;
+        margin-top: -1vh;
+        margin-left: 6%;
+        background: $colorgold;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
+        font-family: $FuturaDemiC;
+        font-size: 0.9em;
+        line-height: 1em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+}
+
+// Second block - summury and instagram 
+
+.summary {
+    display: $displayX;
+    height: auto;
+    position: relative;
+}
+
+.insta {
+    height: auto;
+    width: 5.7%;
+    background-color: $colormain;
+
+
+    p {
+        position: relative;
+        top: 40%;
+        font-family: $FuturaDemiC;
+        @include font_size;
+        text-align: center;
+        color: $colorgold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        transform: rotate(90deg);
+
+        a {
+            color: $colorgold;
+            text-decoration: none;
+        }
+    }
+
+
+    hr {
+        position: relative;
+        top: 55%;
+        left: 16%;
+        width: 51px;
+        height: 0.1px;
+        transform: rotate(90deg);
+        background-color: $colorgold;
+    }
+
+}
+
+
+
+.about-us {
+
+    width: 94.3%;
+    height: 700px;
+    background-image: url(../src/assets/images/image4.3.png);
+    background-repeat: no-repeat;
+}
+
+.about-us::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5.7%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.about-us__content {
+    position: relative;
+    top: 27%;
+    left: 4.5%;
+    z-index: 2;
+
+
+    h2 {
+        width: 60%;
+        font-family: $Yeseva;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 53px;
+        text-transform: uppercase;
+        color: $colorwhite;
+
+        span {
+            color: $colorgold;
+        }
+    }
+
+    p {
+        position: relative;
+        margin-top: 1%;
+        width: 31%;
+        font-family: $FuturaBook;
+        font-size: 22px;
+        line-height: 30px;
+        color: $colorwhite;
+    }
+}
+
+.about-us__content-buttons {
+    margin-top: 3%;
+
+    &_calc-btn {
+        @include sammury_buttons;
+        background: $colorgold;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+        border-radius: 2px;
+    }
+
+    &_sabmit-btn {
+        @include sammury_buttons;
+        margin-left: 1%;
+        background-color: transparent;
+        border: 1px solid $colorwhite;
+        box-sizing: border-box;
+        border-radius: 2px;
+    }
+
+}
+
+.scrool-block {
+    position: absolute;
+    z-index: 1;
+    bottom: -50px;
+    left: 0;
+    width: 247px;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colormain;
+
+    .scroll-block__link {
+        text-decoration: none;
+        font-family: $Yeseva;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: $colorwhite;
+    }
+
+    .scroll-block__icon {
+        width: 29px;
+        height: 29px;
+        text-align: center;
+        margin-left: 18px;
+    }
+}
+
+// project block
+.project {
+    background-color: $colormain;
+    height: 650px;
+    margin-top: -3%;
+    display: flex;
+
+
+
+    &__content {
+        position: relative;
+        width: 29%;
+        top: 17%;
+        left: 7%;
+        display: flex;
+        flex-direction: column;
+
+        &_image-mobile {
+            display: none;
+        }
+
+        &_head {
+            display: flex;
+            align-items: center;
+            margin-top: 34px;
+
+            h2 {
+                font-family: $Yeseva;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 27px;
+                line-height: 37px;
+                letter-spacing: -0.07em;
+                text-transform: uppercase;
+                color: $colorgold;
+            }
+
+            hr {
+                position: relative;
+                margin-top: 6%;
+                left: 2%;
+                width: 65px;
+                height: 1px;
+                background-color: $colorgold;
+            }
+        }
+
+        &_text {
+            margin-top: 5%;
+            font-family: $FuturaBook;
+            font-size: 18px;
+            line-height: 29px;
+            color: $colorwhite;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-wrap: wrap;
+
+        &_item {
+            flex-direction: column;
+            width: 50%;
+            margin-top: 6%;
+
+            h4 {
+                font-family: $Yeseva;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: $colorgold;
+            }
+
+            p {
+                padding-top: 5px;
+                font-family: $FuturaBook;
+                font-size: 15px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+
+        }
+
+    }
+
+    .project__arrow {
+        display: flex;
+        margin-top: 23%;
+
+        &_pages {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 35px;
+        }
+
+        &_page {
+            margin-left: 15px;
+            width: 15px;
+            height: 15px;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+
+        &_page:first-child {
+            background-color: white;
+        }
+
+    }
+
+    &__slider {
+        width: 59%;
+        position: relative;
+        top: 15%;
+        left: 12%;
+
+
+        &_nav {
+            &_items {
+                display: flex;
+
+
+            }
+
+            &_item {
+                list-style: none;
+                margin-right: 8%;
+
+                a {
+                    font-family: $Yeseva;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                    color: rgba(255, 255, 255, 0.3);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $colorgold;
+                        border-bottom-color: $colorgold;
+                    }
+                }
+
+                a.active {
+                    color: $colorgold;
+                    border-bottom-color: $colorgold;
+                }
+            }
+
+        }
+
+        &_photo {
+            display: $displayX;
+            position: relative;
+            margin-top: 4%;
+            overflow: hidden;
+
+            &_image1 {
+                width: 100%;
+
+            }
+
+            &_image2 {
+                margin-left: 2%;
+                width: 100%;
+
+            }
+
+            &_button {
+                position: absolute;
+                top: 37%;
+                left: 89%;
+            }
+
+        }
+    }
+
+
+}
+
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: $colormain;
+    z-index: 2;
+
+    &__block {
+        @include vertical_block;
+        align-items: center;
+
+
+        &_title {
+            padding-top: 4%;
+            font-family: $Yeseva;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $colorwhite;
+        }
+
+        &_icon {
+            margin-top: 2%;
+            display: flex;
+            justify-content: center;
+
+
+            &_line {
+
+                width: 32px;
+                height: 0.5px;
+                margin-top: 10%;
+                background-color: $colorgold;
+                border: 1px solid $colorgold;
+            }
+
+            &_img {
+                margin: 0 14px;
+            }
+        }
+
+        &_line {
+            width: 55px;
+            height: 0.5px;
+            margin-top: 3%;
+            background-color: $colorgold;
+            border: 1px solid $colorgold;
+        }
+
+        &_text {
+            width: 47%;
+            padding-top: 2%;
+            font-family: $FuturaBook;
+            font-size: 20px;
+            line-height: 34px;
+            text-align: center;
+            color: #363636;
+        }
+
+        &_form {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            align-items: center;
+
+            &_inputs {
+                display: flex;
+
+
+            }
+
+            &_item {
+                @include vertical_block;
+
+                margin: 35px 25px 0;
+
+            }
+
+            &_label {
+                font-family: $FuturaBook;
+                font-size: 15px;
+                line-height: 20px;
+                color: rgba(54, 54, 54, 0.5);
+            }
+
+            &_input {
+                width: 14vw;
+                font-family: $FuturaBook;
+                font-size: 18px;
+                line-height: 24px;
+                color: #363636;
+                border: none;
+                border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+            }
+
+            &_submit {
+                margin-top: 30px;
+                margin-bottom: 20px;
+                width: 15vw;
+                height: 51px;
+                font-family: $FuturaDemiC;
+                font-size: 15px;
+                line-height: 26px;
+                text-align: center;
+                text-transform: uppercase;
+                background: $colorgold;
+                border: none;
+                color: $colorwhite;
+            }
+
+            &_checking {
+                width: 33%;
+            }
+
+            &_check-text {
+                font-family: $FuturaBook;
+                font-size: 16px;
+                line-height: 22px;
+                color: #181818;
+            }
+
+        }
+    }
+
+    &__player {
+        margin-top: 2%;
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+
+        &_play {
+            width: 817px;
+            height: 464px;
+        }
+    }
+}
+
+.video:after {
+    content: '';
+    width: 100%;
+    height: 60%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    z-index: -1;
+}
+
+.measurement {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 770px;
+
+    &__content {
+        width: 100%;
+        height: 750px;
+
+        &_head {
+            &_name {
+
+                font-family: $Yeseva;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #181818;
+            }
+
+            &_icons {
+                display: flex;
+                justify-content: center;
+                margin-top: 4%;
+            }
+
+            &_icon-line {
+                width: 32px;
+                height: 0.5px;
+                margin-top: 1%;
+                background-color: $colorgold;
+                border: 1px solid $colorgold;
+            }
+
+            &_img {
+                margin: 0 14px;
+            }
+        }
+
+
+
+
+    }
+
+}
+
+.price {
+
+    @include block_position;
+    margin: 2% 1% 0;
+    justify-content: space-between;
+
+    &__sheet {
+        position: relative;
+        width: 31%;
+
+        &_image {
+            width: 100%;
+        }
+
+        &_image-mob {
+            display: none;
+        }
+
+        &_description {
+            position: relative;
+            margin: -27% auto;
+            width: 80%;
+            height: 290px;
+            ;
+            background: $colorwhite;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+            &_list {
+
+                padding-left: 10%;
+            }
+
+            &_title {
+                padding: 4% 0 0 6%;
+                font-family: $Yeseva;
+                font-size: 18px;
+                line-height: 25px;
+                color: #363636;
+            }
+
+            &_item {
+                font-family: $FuturaBook;
+                font-size: 15px;
+                line-height: 25px;
+                color: #959595;
+            }
+        }
+
+        &_inputs {
+            position: relative;
+            margin-top: 12%;
+
+        }
+
+        &_input {
+
+            padding: 5%;
+            background: $colorgold;
+            box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+            border: none;
+            font-family: $Yeseva;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: $colorwhite;
+            cursor: pointer;
+        }
+    }
+}
+
+.benefits {
+    background: url('../src/assets/images/Building.png') no-repeat;
+
+    height: 950px;
+    margin-top: 5%;
+
+    &__content {
+        display: flex;
+        padding-top: 5%;
+
+        // align-items: center;
+
+
+        &_img-block {
+            position: relative;
+            width: 58%;
+        }
+
+        &_circle {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            right: 42%;
+            background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #fff 0%, #fff 20%, #fff 30%, #E3B873 100%) border-box;
+            border: 3px solid transparent;
+            z-index: -6;
+        }
+
+        &_list {
+            position: relative;
+            top: -100%;
+
+        }
+
+        &_item {
+            display: flex;
+            width: 51%;
+            justify-content: left;
+            align-items: center;
+            list-style-type: none;
+
+
+            &_num {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 42px;
+                height: 42px;
+                background: $colorgold;
+                border-radius: 50%;
+                border: 4px solid white;
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+                margin-right: 1%;
+
+
+                span {
+                    font-family: $Yeseva;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: $colorwhite;
+
+                }
+            }
+
+            &_slogan {
+                font-family: FuturaMediumC;
+                font-size: 18px;
+                line-height: 21px;
+                color: #363636;
+            }
+
+
+        }
+
+        &_right-block {
+            position: relative;
+            top: 5%;
+            display: flex;
+            flex-direction: column;
+            width: 36%;
+        }
+    }
+}
+
+.item1 {
+    position: relative;
+    left: 36%;
+    margin-top: 33px;
+
+}
+
+.item2 {
+    position: relative;
+    left: 51%;
+    margin-top: 12%;
+}
+
+.item3 {
+    position: relative;
+    left: 55%;
+    margin-top: 14%;
+
+}
+
+.item4 {
+    position: relative;
+    left: 49%;
+    margin-top: 9%;
+}
+
+.benefits__form-block {
+    position: relative;
+    top: 5%;
+    @include vertical_block;
+    padding: 28px 49px 27px;
+    background: $colormain;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+
+    &_title {
+        font-family: $FuturaDemiC;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: $colorwhite;
+    }
+
+    &_item {
+        @include vertical_block;
+        margin-top: 9%;
+        padding: 0 2%;
+    }
+
+    &_name {
+        @include form-name();
+    }
+
+    &_input {
+        border: none;
+        background-color: inherit;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        font-family: "FuturaMediumC";
+        font-size: 18px;
+        line-height: 25px;
+        color: $colorwhite;
+        outline: none;
+    }
+
+    &_checked {
+        margin-top: 6%;
+
+        &_name {
+            font-family: $FuturaBook;
+            font-size: 16px;
+            line-height: 22px;
+            color: $colorwhite;
+        }
+    }
+
+
+    &_sending {
+
+        &_submit {
+            margin-top: 7%;
+            margin-left: 54%;
+            width: 43%;
+            height: 5%;
+            background: #E3B873;
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+            font-family: $FuturaDemiC;
+            padding: 3% 0;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $colorwhite;
+        }
+    }
+}
+
+.benefits__icons {
+    display: flex;
+    margin-top: 14%;
+
+
+    &_text {
+        padding-top: 4%;
+        font-family: $FuturaDemiC;
+        font-size: 20px;
+        line-height: 25px;
+        color: $colorgold;
+        text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    }
+}
+
+
+
+.pictures {
+    position: relative;
+    height: 864px;
+    background: url('../src/assets/images/Background_pictures.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    &__content {
+        @include block_position;
+
+        &_image-mobile {
+            display: none;
+        }
+
+        &_repair-styles {
+            @include vertical_block();
+            width: 25%;
+            margin-left: 7%;
+            margin-top: 9%;
+
+            &_title {
+                font-family: $Yeseva;
+                font-size: 27px;
+                line-height: 37px;
+                text-transform: uppercase;
+                color: $colorgold;
+            }
+
+            &_list {
+                margin-top: 8%;
+                list-style-type: none;
+            }
+
+            &_item {
+                margin-top: 3%;
+
+                a {
+                    text-decoration: none;
+                    font-family: "Proxima Nova";
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 34px;
+                    color: $colorwhite;
+                }
+
+                a:hover {
+                    color: $colorgold;
+                }
+
+                a.selected-picture {
+                    color: $colorgold;
+                    border-bottom: 1px solid $colorgold;
+                }
+            }
+
+
+
+
+
+        }
+
+        &_images {
+            width: 70%;
+            margin-left: 10%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+
+            &_block-one {
+                position: relative;
+                top: -4%;
+                width: 43%;
+            }
+
+            &_block-two {
+                position: relative;
+                top: -9%;
+                left: 4%;
+                width: 43%;
+            }
+
+            &_block-three {
+                position: relative;
+                width: 43%;
+            }
+
+            &_block-four {
+                position: relative;
+                top: -30%;
+                left: 4%;
+                width: 43%;
+            }
+
+            &_img {
+                max-width: 100%;
+            }
+        }
+    }
+
+}
+
+
+
+
+.design-project {
+    position: relative;
+    display: flex;
+    margin-top: 8%;
+    width: 100%;
+    height: 900px;
+
+    &__content {
+        width: 100%;
+
+        &_title {
+            &_text {
+                @include title_head();
+                color: #181818;
+            }
+
+            &_icons {
+                display: flex;
+                justify-content: center;
+                margin-top: 1%;
+            }
+
+            &_icon-line {
+                @include icon_line();
+            }
+
+            &_img {
+                margin: 0 14px;
+            }
+
+            &_descr {
+                margin-top: 1%;
+                @include title_description();
+                color: #363636;
+            }
+        }
+    }
+
+}
+
+.price-new {
+    @include block_position;
+    justify-content: space-around;
+    margin: 2% 6%;
+
+    &__list {
+        position: relative;
+        width: 31%;
+
+        &_image {
+            width: 100%;
+        }
+
+        &_text {
+            position: absolute;
+            top: 66%;
+            left: 8%;
+            width: 79%;
+            padding-left: 20px;
+            padding-top: 20px;
+            background: $colorwhite;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+            &_name {
+                font-family: $Yeseva;
+                font-size: 18px;
+                line-height: 25px;
+                color: #363636;
+            }
+
+            &_items {
+                padding-left: 20px;
+                padding-top: 10px;
+            }
+
+            &_item {
+                font-family: $FuturaBook;
+                font-size: 15px;
+                line-height: 25px;
+                color: #959595;
+            }
+
+            &_input {
+                position: relative;
+                width: 65%;
+                padding: 7%;
+                margin-top: 6%;
+                margin-left: -6.5%;
+                background-color: $colorgold;
+                box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+                border: none;
+                font-family: $Yeseva;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: $colorwhite;
+                cursor: pointer;
+            }
+        }
+
+        &_text-one {
+            height: 180px;
+        }
+
+        &_text-two {
+            height: 253px;
+        }
+
+        &_text-three {
+            height: 377px;
+        }
+    }
+}
+
+.design-project::after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    background: #131313;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+.steps {
+
+    width: 100%;
+    height: 750px;
+    background-color: #131313;
+
+    &__content {
+        display: flex;
+    }
+
+    &__left-block {
+        position: relative;
+        width: 34%;
+        margin-left: 5%;
+        margin-top: -3%;
+
+
+
+        &_title {
+            font-family: $FuturaDemiC;
+            font-size: 15px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: $colorwhite;
+        }
+
+        &_text {
+            margin-top: 2%;
+            font-family: $Yeseva;
+            font-size: 27px;
+            line-height: 37px;
+            text-transform: uppercase;
+            color: #E3B873;
+        }
+
+        &_line {
+            width: 92px;
+            border: 1px solid $colorgold;
+            background: $colorgold;
+
+            margin-top: -5%;
+            margin-left: 50%;
+        }
+
+        &_info {
+            margin-top: 25%;
+
+            &_number {
+                font-family: $Yeseva;
+                font-size: 18px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: $colorwhite;
+            }
+
+            &_text {
+                margin-top: 2%;
+            }
+
+            &_title {
+                font-family: $Yeseva;
+                font-size: 15px;
+                line-height: 23px;
+                text-transform: uppercase;
+                color: $colorgold;
+            }
+
+            &_paragraph {
+                margin-top: 2%;
+                width: 80%;
+                font-family: $FuturaBook;
+                font-size: 15px;
+                line-height: 25px;
+                color: $colorwhite;
+
+                p {
+                    margin-top: 4%;
+                }
+            }
+        }
+
+    }
+
+    &__arrows {
+        display: flex;
+        margin-top: 30%;
+
+        &_back,
+        &_next {
+            margin-top: 0.5%;
+        }
+
+        &_pages {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 35px;
+        }
+
+        &_page {
+            margin-left: 15px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+
+        &_page:first-child {
+            background-color: white;
+        }
+
+    }
+
+}
+
+.steps {
+    &__right-block {
+        margin-left: 2%;
+        width: 66%;
+        @include vertical_block();
+        margin-top: 2.5%;
+    }
+
+    &__nav {
+        &_items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        &_item {
+            @include vertical_block();
+            // justify-content: space-between;
+            width: 35%;
+            height: 100px;
+
+
+
+            &_right {
+                width: 25%;
+            }
+
+
+
+            &_num {
+                font-family: $Yeseva;
+                font-size: 15px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: $colorwhite;
+                text-decoration: $colorgold underline;
+                opacity: 0.5;
+            }
+
+            &_text {
+                margin-top: 2%;
+                font-family: $FuturaBook;
+                font-size: 15px;
+                line-height: 18px;
+                color: $colorwhite;
+                opacity: 0.5;
+            }
+
+        }
+
+        &_active {
+            color: $colorwhite;
+            opacity: 1;
+        }
+    }
+
+    &__img {
+        margin-top: 1%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.team {
+    @include flex-relative();
+    width: 100%;
+    height: 900px;
+    background: #131313;
+
+    &__content {
+        width: 100%;
+        z-index: 2;
+    }
+
+    &__title {
+        &_head {
+            @include title_head();
+            color: $colorwhite;
+        }
+
+        &_icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1%;
+
+            &_icon-line {
+                @include icon_line();
+            }
+
+            &_img {
+                margin: 0 14px;
+            }
+        }
+
+        &_descr {
+            margin-top: 1%;
+            @include title_description();
+            color: $colorwhite;
+        }
+    }
+
+    &__sheets {
+        display: flex;
+        justify-content: space-around;
+        margin: 6% 6% 0;
+        position: relative;
+        height: 400px;
+
+
+    }
+
+    &__sheet {
+        position: relative;
+
+        &_logo {
+            position: relative;
+            margin-top: -148%;
+            margin-left: -18%;
+        }
+
+        &_text {
+            @include vertical_block();
+            align-items: center;
+            position: relative;
+            margin-top: 68%;
+            margin-left: 7%;
+            width: 86%;
+            height: 210px;
+            background: $colorwhite;
+            z-index: 2;
+
+            &_name {
+                margin-top: 4vh;
+                @include names();
+            }
+
+            &_job {
+                font-family: $FuturaBook;
+                font-size: 18px;
+                line-height: 26px;
+                text-align: center;
+                color: $colorgrey;
+            }
+
+            &_speciality {
+                margin-top: 3vh;
+                padding-top: 2vh;
+                width: 100%;
+                height: 19%;
+                color: $colorwhite;
+                background: $colorgold;
+                @include job_specialuty();
+
+
+            }
+        }
+    }
+
+    &__information {
+        margin-top: 4%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        &_line {
+            margin-top: 2%;
+            @include underline();
+        }
+
+        &_text {
+            padding-top: 2%;
+            @include undertext();
+            color: #363636;
+        }
+    }
+}
+
+.team::after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 0;
+}
+
+.clients {
+    @include flex-relative();
+    width: 100%;
+    height: 760px;
+    margin-top: 6%;
+
+    &__title {
+        &_head {
+            @include title_head();
+            color: #181818;
+        }
+
+        &_icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1%;
+
+            &_icon-line {
+                @include icon_line();
+            }
+
+            &_img {
+                margin: 0 14px;
+            }
+        }
+
+        &_descr {
+            margin-top: 1%;
+            @include title_description();
+            color: #363636;
+        }
+    }
+
+    &__comments {
+        margin: 4% 4%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__sheet {
+        width: 30%;
+        @include vertical_block();
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+
+        &_title {
+            display: flex;
+            margin: 3vh 3vh;
+
+            &_img {
+                border-radius: 50%;
+            }
+
+            &_name {
+                margin-top: 3vh;
+                margin-left: 2vh;
+                font-family: $Yeseva;
+                font-size: 18px;
+                line-height: 23px;
+                color: #181818;
+            }
+
+            &_comment {
+                width: 80%;
+                padding: 1% 6%;
+                font-family: $FuturaBook;
+                font-size: 15px;
+                line-height: 180%;
+                color: $colorgrey;
+            }
+        }
+    }
+
+    &__counts {
+        display: flex;
+        position: relative;
+        top: 4vh;
+        margin-top: 23%;
+        width: 85%;
+        height: 63px;
+        background: $colorgold;
+        box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+
+        &_size {
+            margin-left: 6%;
+            display: flex;
+            width: 40%;
+            padding-top: 2vh;
+
+            &_text {
+                @include counts_txt();
+                margin-top: 2%;
+                margin-left: 9%;
+            }
+
+        }
+
+        &_time {
+            display: flex;
+            width: 60%;
+            padding-top: 2vh;
+            border-left: 1px solid $colorwhite;
+
+            &_icons {
+                margin-left: 6%;
+            }
+
+            &_text {
+                @include counts_txt();
+                margin-top: 2%;
+                margin-left: 9%;
+            }
+
+        }
+    }
+
+}
+
+input[placeholder] {
+    color: white;
+}
+
+.contacts {
+    margin-top: 10%;
+    position: relative;
+    @include vertical_block();
+    height: 1150px;
+    align-items: center;
+
+    &__content {
+        width: 100%;
+        justify-content: center;
+    }
+
+    &__question {
+        margin: 0 auto;
+        width: 60%;
+        height: 114%;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        z-index: 10;
+
+        &_title {
+            margin-top: 3%;
+            @include title_head();
+            color: $colorwhite;
+        }
+
+        &_form {
+            width: 60%;
+            @include vertical_block();
+            margin: 0 auto;
+
+            &_inputs-first {
+                @include block_position();
+                margin-top: 6%;
+            }
+
+            &_input-item {
+                @include vertical_block();
+                width: 45%;
+            }
+
+            &_inputs-second {
+                @include vertical_block();
+                margin-top: 6%;
+            }
+
+            &_checked {
+                margin-top: 6%;
+                margin-left: 16%
+            }
+
+            &_name {
+                @include form-name();
+            }
+
+            &_input {
+                margin-top: 1%;
+                border: none;
+                background-color: inherit;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                font-family: $FuturaBook;
+                font-size: 18px;
+                line-height: 25px;
+                color: $colorwhite;
+                outline: none;
+            }
+
+            &_input::placeholder {
+                font-family: $FuturaBook;
+                color: $colorwhite;
+            }
+
+            &_chkbox-name {
+                margin-left: 1%;
+                font-family: $FuturaBook;
+                font-size: 16px;
+                line-height: 22px;
+                color: $colorwhite;
+            }
+
+            &_submit {
+                text-align: center;
+            }
+
+            &_submit-btn {
+                margin-top: 7%;
+                width: 35%;
+                height: 50px;
+                background: #E3B873;
+                box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+                border: none;
+                font-family: $FuturaDemiC;
+                padding: 3% 0;
+                font-size: 13px;
+                line-height: 18px;
+                text-align: center;
+                text-transform: uppercase;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    &__location {
+        margin-top: 6%;
+
+        &_address {
+            @include title_head();
+            color: $colorgold;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        &_icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 4%;
+        }
+
+        &_icon {
+            margin: 0 3%;
+        }
+
+        &_map {
+            margin-top: 5%;
+
+        }
+    }
+}
+
+.contacts::after {
+    content: '';
+    width: 100%;
+    height: 75%;
+    background: #131313;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    z-index: -1;
+}
+
+.footer {
+    @include header-footer();
+
+    h2 {
+        @include head-foot-title();
+    }
+}
+
+
+
+.checkbox-document {
+    @include checkbox();
+}
+
+// @media only screen and (min-width: 576px) and (max-width: 1024px) {
