@@ -30,11 +30,11 @@
 .navbar__switcher {
     @include block_position;
 
-    li {
+    &_item {
         list-style-type: none;
 
 
-        a {
+        &_link {
             text-decoration: none;
             font-family: $FuturaBook;
             @include font_size;
@@ -56,7 +56,7 @@
 }
 
 .call-request {
-    display: flex;
+    display: $displayX;
     width: 32%;
     padding-top: 10px;
     margin-right: 6%;
@@ -85,7 +85,8 @@
         line-height: 1em;
         text-align: center;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $colorwhite;
+        cursor: pointer;
     }
 
 }
@@ -95,7 +96,7 @@
 .summary {
     display: $displayX;
     height: auto;
-    position: relative;
+    position: $posrelative;
 }
 
 .insta {
@@ -104,8 +105,8 @@
     background-color: $colormain;
 
 
-    p {
-        position: relative;
+    &__paragraph {
+        position: $posrelative;
         top: 40%;
         font-family: $FuturaDemiC;
         @include font_size;
@@ -115,7 +116,7 @@
         text-transform: uppercase;
         transform: rotate(90deg);
 
-        a {
+        &_link {
             color: $colorgold;
             text-decoration: none;
         }
@@ -123,7 +124,7 @@
 
 
     hr {
-        position: relative;
+        position: $posrelative;
         top: 55%;
         left: 16%;
         width: 51px;
@@ -146,7 +147,7 @@
 
 .about-us::after {
     content: '';
-    position: absolute;
+    position: $posabsolute;
     top: 0;
     left: 5.7%;
     right: 0;
@@ -155,14 +156,16 @@
     z-index: 1;
 }
 
-.about-us__content {
-    position: relative;
+.about-us {
+    &__content {
+    position: $posrelative;
     top: 27%;
     left: 4.5%;
     z-index: 2;
+    }
+    &__content-text {
 
-
-    h2 {
+    &_header {
         width: 60%;
         font-family: $Yeseva;
         font-style: normal;
@@ -177,8 +180,8 @@
         }
     }
 
-    p {
-        position: relative;
+    &_paragraph {
+        position: $posrelative;
         margin-top: 1%;
         width: 31%;
         font-family: $FuturaBook;
@@ -186,6 +189,7 @@
         line-height: 30px;
         color: $colorwhite;
     }
+}
 }
 
 .about-us__content-buttons {
@@ -196,6 +200,7 @@
         background: $colorgold;
         box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
         border-radius: 2px;
+        cursor: pointer;
     }
 
     &_sabmit-btn {
@@ -205,18 +210,19 @@
         border: 1px solid $colorwhite;
         box-sizing: border-box;
         border-radius: 2px;
+        cursor: pointer;
     }
 
 }
 
 .scrool-block {
-    position: absolute;
+    position: $posabsolute;
     z-index: 1;
     bottom: -50px;
     left: 0;
     width: 247px;
     height: 97px;
-    display: flex;
+    display: $displayX;
     justify-content: center;
     align-items: center;
     background-color: $colormain;
@@ -245,16 +251,16 @@
     background-color: $colormain;
     height: 650px;
     margin-top: -3%;
-    display: flex;
+    display: $displayX;
 
 
 
     &__content {
-        position: relative;
+        position: $posrelative;
         width: 29%;
         top: 17%;
         left: 7%;
-        display: flex;
+        display: $displayX;
         flex-direction: column;
 
         &_image-mobile {
@@ -262,11 +268,11 @@
         }
 
         &_head {
-            display: flex;
+            display: $displayX;
             align-items: center;
             margin-top: 34px;
 
-            h2 {
+            &_title {
                 font-family: $Yeseva;
                 font-style: normal;
                 font-weight: normal;
@@ -278,7 +284,7 @@
             }
 
             hr {
-                position: relative;
+                position: $posrelative;
                 margin-top: 6%;
                 left: 2%;
                 width: 65px;
@@ -297,7 +303,7 @@
     }
 
     &__description {
-        display: flex;
+        display: $displayX;
         flex-wrap: wrap;
 
         &_item {
@@ -305,7 +311,7 @@
             width: 50%;
             margin-top: 6%;
 
-            h4 {
+            &_title {
                 font-family: $Yeseva;
                 font-style: normal;
                 font-weight: normal;
@@ -315,12 +321,12 @@
                 color: $colorgold;
             }
 
-            p {
+            &_text {
                 padding-top: 5px;
                 font-family: $FuturaBook;
                 font-size: 15px;
                 line-height: 20px;
-                color: #FFFFFF;
+                color: $colorwhite;
             }
 
         }
@@ -328,11 +334,11 @@
     }
 
     .project__arrow {
-        display: flex;
+        display: $displayX;
         margin-top: 23%;
 
         &_pages {
-            display: flex;
+            display: $displayX;
             justify-content: space-between;
             margin-left: 20px;
             margin-right: 35px;
@@ -348,21 +354,21 @@
         }
 
         &_page:first-child {
-            background-color: white;
+            background-color: $colorwhite
         }
 
     }
 
     &__slider {
         width: 59%;
-        position: relative;
+        position: $posrelative;
         top: 15%;
         left: 12%;
 
 
         &_nav {
             &_items {
-                display: flex;
+                display: $displayX;
 
 
             }
@@ -397,7 +403,7 @@
 
         &_photo {
             display: $displayX;
-            position: relative;
+            position: $posrelative;
             margin-top: 4%;
             overflow: hidden;
 
@@ -413,7 +419,7 @@
             }
 
             &_button {
-                position: absolute;
+                position: $posabsolute;
                 top: 37%;
                 left: 89%;
             }
@@ -426,7 +432,8 @@
 
 
 .video {
-    position: relative;
+    position: $posrelative;
+    margin-top: -1px;
     width: 100%;
     height: 1000px;
     background: $colormain;
@@ -451,7 +458,7 @@
 
         &_icon {
             margin-top: 2%;
-            display: flex;
+            display: $displayX;
             justify-content: center;
 
 
@@ -484,17 +491,17 @@
             font-size: 20px;
             line-height: 34px;
             text-align: center;
-            color: #363636;
+            color: $darkgrey;
         }
 
         &_form {
-            display: flex;
+            display: $displayX;
             flex-direction: column;
             width: 65%;
             align-items: center;
 
             &_inputs {
-                display: flex;
+                display: $displayX;
 
 
             }
@@ -518,7 +525,7 @@
                 font-family: $FuturaBook;
                 font-size: 18px;
                 line-height: 24px;
-                color: #363636;
+                color: $darkgrey;
                 border: none;
                 border-bottom: 1px solid rgba(54, 54, 54, 0.3);
             }
@@ -536,6 +543,7 @@
                 background: $colorgold;
                 border: none;
                 color: $colorwhite;
+                cursor: pointer;
             }
 
             &_checking {
@@ -546,7 +554,7 @@
                 font-family: $FuturaBook;
                 font-size: 16px;
                 line-height: 22px;
-                color: #181818;
+                color: $colordark;
             }
 
         }
@@ -567,15 +575,15 @@
     content: '';
     width: 100%;
     height: 60%;
-    background: white;
-    position: absolute;
+    background: $colorwhite;
+    position: $posabsolute;
     left: 0;
     top: 40%;
     z-index: -1;
 }
 
 .measurement {
-    display: flex;
+    display: $displayX;
     justify-content: center;
     width: 100%;
     height: 770px;
@@ -594,11 +602,11 @@
                 line-height: 28px;
                 text-align: center;
                 text-transform: uppercase;
-                color: #181818;
+                color: $colordark;
             }
 
             &_icons {
-                display: flex;
+                display: $displayX;
                 justify-content: center;
                 margin-top: 4%;
             }
@@ -630,7 +638,7 @@
     justify-content: space-between;
 
     &__sheet {
-        position: relative;
+        position: $posrelative;
         width: 31%;
 
         &_image {
@@ -642,7 +650,7 @@
         }
 
         &_description {
-            position: relative;
+            position: $posrelative;
             margin: -27% auto;
             width: 80%;
             height: 290px;
@@ -660,19 +668,19 @@
                 font-family: $Yeseva;
                 font-size: 18px;
                 line-height: 25px;
-                color: #363636;
+                color: $darkgrey;
             }
 
             &_item {
                 font-family: $FuturaBook;
                 font-size: 15px;
                 line-height: 25px;
-                color: #959595;
+                color: $colorgrey;
             }
         }
 
         &_inputs {
-            position: relative;
+            position: $posrelative;
             margin-top: 12%;
 
         }
@@ -700,51 +708,51 @@
     margin-top: 5%;
 
     &__content {
-        display: flex;
+        display: $displayX;
         padding-top: 5%;
 
         // align-items: center;
 
 
         &_img-block {
-            position: relative;
+            position: $posrelative;
             width: 58%;
         }
 
         &_circle {
-            position: relative;
+            position: $posrelative;
             width: 100%;
             height: 100%;
             border-radius: 50%;
             right: 42%;
-            background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #fff 0%, #fff 20%, #fff 30%, #E3B873 100%) border-box;
+            background: linear-gradient($colorwhite, $colorwhite) padding-box, linear-gradient(to right, $colorwhite 0%, $colorwhite 20%, $colorwhite 30%, $colorgold 100%) border-box;
             border: 3px solid transparent;
             z-index: -6;
         }
 
         &_list {
-            position: relative;
+            position: $posrelative;
             top: -100%;
 
         }
 
         &_item {
-            display: flex;
-            width: 51%;
+            display: $displayX;
+            width: 70%;
             justify-content: left;
             align-items: center;
             list-style-type: none;
 
 
             &_num {
-                display: flex;
+                display: $displayX;
                 justify-content: center;
                 align-items: center;
                 width: 42px;
                 height: 42px;
                 background: $colorgold;
                 border-radius: 50%;
-                border: 4px solid white;
+                border: 4px solid $colorwhite;
                 box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
                 margin-right: 1%;
 
@@ -763,16 +771,16 @@
                 font-family: FuturaMediumC;
                 font-size: 18px;
                 line-height: 21px;
-                color: #363636;
+                color: $darkgrey;
             }
 
 
         }
 
         &_right-block {
-            position: relative;
+            position: $posrelative;
             top: 5%;
-            display: flex;
+            display: $displayX;
             flex-direction: column;
             width: 36%;
         }
@@ -780,33 +788,33 @@
 }
 
 .item1 {
-    position: relative;
+    position: $posrelative;
     left: 36%;
     margin-top: 33px;
 
 }
 
 .item2 {
-    position: relative;
+    position: $posrelative;
     left: 51%;
     margin-top: 12%;
 }
 
 .item3 {
-    position: relative;
+    position: $posrelative;
     left: 55%;
     margin-top: 14%;
 
 }
 
 .item4 {
-    position: relative;
+    position: $posrelative;
     left: 49%;
     margin-top: 9%;
 }
 
 .benefits__form-block {
-    position: relative;
+    position: $posrelative;
     top: 5%;
     @include vertical_block;
     padding: 28px 49px 27px;
@@ -861,7 +869,7 @@
             margin-left: 54%;
             width: 43%;
             height: 5%;
-            background: #E3B873;
+            background: $colorgold;
             box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
             font-family: $FuturaDemiC;
             padding: 3% 0;
@@ -870,12 +878,13 @@
             text-align: center;
             text-transform: uppercase;
             color: $colorwhite;
+            cursor: pointer;
         }
     }
 }
 
 .benefits__icons {
-    display: flex;
+    display: $displayX;
     margin-top: 14%;
 
 
@@ -892,12 +901,12 @@
 
 
 .pictures {
-    position: relative;
+    position: $posrelative;
     height: 864px;
     background: url('../src/assets/images/Background_pictures.png');
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+    // background-size: 100%;
+    // background-position: center;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -960,37 +969,37 @@
         &_images {
             width: 70%;
             margin-left: 10%;
-            position: relative;
-            display: flex;
+            position: $posrelative;
+            display: $displayX;
             flex-wrap: wrap;
 
             &_block-one {
-                position: relative;
+                position: $posrelative;
                 top: -4%;
-                width: 43%;
+                
             }
 
             &_block-two {
-                position: relative;
+                position: $posrelative;
                 top: -9%;
-                left: 4%;
-                width: 43%;
+                left: 5%;
+                
             }
 
             &_block-three {
-                position: relative;
-                width: 43%;
+                position: $posrelative;
+                
             }
 
             &_block-four {
-                position: relative;
+                position: $posrelative;
                 top: -30%;
-                left: 4%;
-                width: 43%;
+                left: 5%;
+                
             }
 
             &_img {
-                max-width: 100%;
+                max-width: 354px;
             }
         }
     }
@@ -1001,8 +1010,8 @@
 
 
 .design-project {
-    position: relative;
-    display: flex;
+    position: $posrelative;
+    display: $displayX;
     margin-top: 8%;
     width: 100%;
     height: 900px;
@@ -1013,11 +1022,11 @@
         &_title {
             &_text {
                 @include title_head();
-                color: #181818;
+                color: $colordark;
             }
 
             &_icons {
-                display: flex;
+                display: $displayX;
                 justify-content: center;
                 margin-top: 1%;
             }
@@ -1033,7 +1042,7 @@
             &_descr {
                 margin-top: 1%;
                 @include title_description();
-                color: #363636;
+                color: $darkgrey;
             }
         }
     }
@@ -1046,7 +1055,7 @@
     margin: 2% 6%;
 
     &__list {
-        position: relative;
+        position: $posrelative;
         width: 31%;
 
         &_image {
@@ -1054,7 +1063,7 @@
         }
 
         &_text {
-            position: absolute;
+            position: $posabsolute;
             top: 66%;
             left: 8%;
             width: 79%;
@@ -1067,7 +1076,7 @@
                 font-family: $Yeseva;
                 font-size: 18px;
                 line-height: 25px;
-                color: #363636;
+                color: $darkgrey;
             }
 
             &_items {
@@ -1079,11 +1088,11 @@
                 font-family: $FuturaBook;
                 font-size: 15px;
                 line-height: 25px;
-                color: #959595;
+                color: $colorgrey;
             }
 
             &_input {
-                position: relative;
+                position: $posrelative;
                 width: 65%;
                 padding: 7%;
                 margin-top: 6%;
@@ -1118,8 +1127,8 @@
     content: '';
     width: 100%;
     height: 50%;
-    background: #131313;
-    position: absolute;
+    background: $colormain;
+    position: $posabsolute;
     left: 0;
     top: 50%;
     z-index: -1;
@@ -1129,14 +1138,14 @@
 
     width: 100%;
     height: 750px;
-    background-color: #131313;
+    background-color: $colormain;
 
     &__content {
-        display: flex;
+        display: $displayX;
     }
 
     &__left-block {
-        position: relative;
+        position: $posrelative;
         width: 34%;
         margin-left: 5%;
         margin-top: -3%;
@@ -1157,7 +1166,7 @@
             font-size: 27px;
             line-height: 37px;
             text-transform: uppercase;
-            color: #E3B873;
+            color: $colorgold;
         }
 
         &_line {
@@ -1209,7 +1218,7 @@
     }
 
     &__arrows {
-        display: flex;
+        display: $displayX;
         margin-top: 30%;
 
         &_back,
@@ -1218,7 +1227,7 @@
         }
 
         &_pages {
-            display: flex;
+            display: $displayX;
             justify-content: space-between;
             margin-left: 20px;
             margin-right: 35px;
@@ -1234,7 +1243,7 @@
         }
 
         &_page:first-child {
-            background-color: white;
+            background-color: $colorwhite
         }
 
     }
@@ -1251,7 +1260,7 @@
 
     &__nav {
         &_items {
-            display: flex;
+            display: $displayX;
             flex-wrap: wrap;
             justify-content: space-between;
 
@@ -1301,7 +1310,7 @@
     &__img {
         margin-top: 1%;
 
-        img {
+        &_photo {
             width: 100%;
         }
     }
@@ -1311,7 +1320,7 @@
     @include flex-relative();
     width: 100%;
     height: 900px;
-    background: #131313;
+    background: $colormain;
 
     &__content {
         width: 100%;
@@ -1325,7 +1334,7 @@
         }
 
         &_icons {
-            display: flex;
+            display: $displayX;
             justify-content: center;
             margin-top: 1%;
 
@@ -1346,20 +1355,20 @@
     }
 
     &__sheets {
-        display: flex;
+        display: $displayX;
         justify-content: space-around;
         margin: 6% 6% 0;
-        position: relative;
+        position: $posrelative;
         height: 400px;
 
 
     }
 
     &__sheet {
-        position: relative;
+        position: $posrelative;
 
         &_logo {
-            position: relative;
+            position: $posrelative;
             margin-top: -148%;
             margin-left: -18%;
         }
@@ -1367,7 +1376,7 @@
         &_text {
             @include vertical_block();
             align-items: center;
-            position: relative;
+            position: $posrelative;
             margin-top: 68%;
             margin-left: 7%;
             width: 86%;
@@ -1405,7 +1414,7 @@
     &__information {
         margin-top: 4%;
         width: 100%;
-        display: flex;
+        display: $displayX;
         flex-direction: column;
         align-items: center;
 
@@ -1418,7 +1427,7 @@
         &_text {
             padding-top: 2%;
             @include undertext();
-            color: #363636;
+            color: $darkgrey;
         }
     }
 }
@@ -1427,8 +1436,8 @@
     content: '';
     width: 100%;
     height: 50%;
-    background: white;
-    position: absolute;
+    background: $colorwhite;
+    position: $posabsolute;
     left: 0;
     top: 50%;
     z-index: 0;
@@ -1443,11 +1452,11 @@
     &__title {
         &_head {
             @include title_head();
-            color: #181818;
+            color: $colordark;
         }
 
         &_icons {
-            display: flex;
+            display: $displayX;
             justify-content: center;
             margin-top: 1%;
 
@@ -1463,13 +1472,13 @@
         &_descr {
             margin-top: 1%;
             @include title_description();
-            color: #363636;
+            color: $darkgrey;
         }
     }
 
     &__comments {
         margin: 4% 4%;
-        display: flex;
+        display: $displayX;
         justify-content: space-between;
 
     }
@@ -1480,8 +1489,8 @@
         box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 
         &_title {
-            display: flex;
-            margin: 3vh 3vh;
+            display: $displayX;
+            margin: 15px 28px;
 
             &_img {
                 border-radius: 50%;
@@ -1493,7 +1502,7 @@
                 font-family: $Yeseva;
                 font-size: 18px;
                 line-height: 23px;
-                color: #181818;
+                color: $colordark;
             }
 
             &_comment {
@@ -1508,8 +1517,8 @@
     }
 
     &__counts {
-        display: flex;
-        position: relative;
+        display: $displayX;
+        position: $posrelative;
         top: 4vh;
         margin-top: 23%;
         width: 85%;
@@ -1519,7 +1528,7 @@
 
         &_size {
             margin-left: 6%;
-            display: flex;
+            display: $displayX;
             width: 40%;
             padding-top: 2vh;
 
@@ -1532,7 +1541,7 @@
         }
 
         &_time {
-            display: flex;
+            display: $displayX;
             width: 60%;
             padding-top: 2vh;
             border-left: 1px solid $colorwhite;
@@ -1553,12 +1562,12 @@
 }
 
 input[placeholder] {
-    color: white;
+    color: $colorwhite
 }
 
 .contacts {
     margin-top: 10%;
-    position: relative;
+    position: $posrelative;
     @include vertical_block();
     height: 1150px;
     align-items: center;
@@ -1572,9 +1581,9 @@ input[placeholder] {
         margin: 0 auto;
         width: 60%;
         height: 114%;
-        display: flex;
+        display: $displayX;
         flex-direction: column;
-        background-color: black;
+        background-color: $colorblack;
         z-index: 10;
 
         &_title {
@@ -1645,7 +1654,7 @@ input[placeholder] {
                 margin-top: 7%;
                 width: 35%;
                 height: 50px;
-                background: #E3B873;
+                background: $colorgold;
                 box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
                 border: none;
                 font-family: $FuturaDemiC;
@@ -1654,7 +1663,7 @@ input[placeholder] {
                 line-height: 18px;
                 text-align: center;
                 text-transform: uppercase;
-                color: white;
+                color: $colorwhite;
                 cursor: pointer;
             }
         }
@@ -1672,7 +1681,7 @@ input[placeholder] {
         }
 
         &_icons {
-            display: flex;
+            display: $displayX;
             justify-content: center;
             margin-top: 4%;
         }
@@ -1692,8 +1701,8 @@ input[placeholder] {
     content: '';
     width: 100%;
     height: 75%;
-    background: #131313;
-    position: absolute;
+    background: $colormain;
+    position: $posabsolute;
     left: 0;
     top: 25%;
     z-index: -1;

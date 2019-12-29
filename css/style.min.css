@@ -79,11 +79,11 @@
           justify-content: space-between;
 }
 
-.navbar__switcher_item {
+.navbar__switcher li {
   list-style-type: none;
 }
 
-.navbar__switcher_item_link {
+.navbar__switcher li a {
   text-decoration: none;
   font-family: "FuturaBookC", sans-serif;
   font-size: 1em;
@@ -92,11 +92,11 @@
   color: white;
 }
 
-.navbar__switcher_item a.selected {
+.navbar__switcher li a.selected {
   color: #E3B873;
 }
 
-.navbar__switcher_item a:hover {
+.navbar__switcher li a:hover {
   color: #E3B873;
 }
 
@@ -134,8 +134,7 @@
   line-height: 1em;
   text-align: center;
   text-transform: uppercase;
-  color: white;
-  cursor: pointer;
+  color: #FFFFFF;
 }
 
 .summary {
@@ -152,7 +151,7 @@
   background-color: #131313;
 }
 
-.insta__paragraph {
+.insta p {
   position: relative;
   top: 40%;
   font-family: "FuturaDemiC", sans-serif;
@@ -166,7 +165,7 @@
           transform: rotate(90deg);
 }
 
-.insta__paragraph_link {
+.insta p a {
   color: #E3B873;
   text-decoration: none;
 }
@@ -207,7 +206,7 @@
   z-index: 2;
 }
 
-.about-us__content-text_header {
+.about-us__content h2 {
   width: 60%;
   font-family: "Yeseva One", cursive;
   font-style: normal;
@@ -218,11 +217,11 @@
   color: white;
 }
 
-.about-us__content-text_header span {
+.about-us__content h2 span {
   color: #E3B873;
 }
 
-.about-us__content-text_paragraph {
+.about-us__content p {
   position: relative;
   margin-top: 1%;
   width: 31%;
@@ -242,12 +241,11 @@
   font-family: "FuturaDemiC", sans-serif;
   font-size: 13px;
   line-height: 15px;
-  color: white;
+  color: #FFFFFF;
   background: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
   border-radius: 2px;
-  cursor: pointer;
 }
 
 .about-us__content-buttons_sabmit-btn {
@@ -256,14 +254,13 @@
   font-family: "FuturaDemiC", sans-serif;
   font-size: 13px;
   line-height: 15px;
-  color: white;
+  color: #FFFFFF;
   margin-left: 1%;
   background-color: transparent;
   border: 1px solid white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 2px;
-  cursor: pointer;
 }
 
 .scrool-block {
@@ -340,7 +337,7 @@
   margin-top: 34px;
 }
 
-.project__content_head_title {
+.project__content_head h2 {
   font-family: "Yeseva One", cursive;
   font-style: normal;
   font-weight: normal;
@@ -385,7 +382,7 @@
   margin-top: 6%;
 }
 
-.project__description_item_title {
+.project__description_item h4 {
   font-family: "Yeseva One", cursive;
   font-style: normal;
   font-weight: normal;
@@ -395,12 +392,12 @@
   color: #E3B873;
 }
 
-.project__description_item_text {
+.project__description_item p {
   padding-top: 5px;
   font-family: "FuturaBookC", sans-serif;
   font-size: 15px;
   line-height: 20px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .project .project__arrow {
@@ -499,7 +496,6 @@
 
 .video {
   position: relative;
-  margin-top: -1px;
   width: 100%;
   height: 1000px;
   background: #131313;
@@ -632,7 +628,6 @@
   background: #E3B873;
   border: none;
   color: white;
-  cursor: pointer;
 }
 
 .video__block_form_checking {
@@ -813,8 +808,8 @@
   height: 100%;
   border-radius: 50%;
   right: 42%;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box, -webkit-gradient(linear, left top, right top, from(white), color-stop(20%, white), color-stop(30%, white), to(#E3B873)) border-box;
-  background: linear-gradient(white, white) padding-box, linear-gradient(to right, white 0%, white 20%, white 30%, #E3B873 100%) border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, right top, from(#fff), color-stop(20%, #fff), color-stop(30%, #fff), to(#E3B873)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #fff 0%, #fff 20%, #fff 30%, #E3B873 100%) border-box;
   border: 3px solid transparent;
   z-index: -6;
 }
@@ -828,7 +823,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 51%;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -990,7 +985,6 @@
   text-align: center;
   text-transform: uppercase;
   color: white;
-  cursor: pointer;
 }
 
 .benefits__icons {
@@ -1014,6 +1008,8 @@
   height: 864px;
   background: url("../src/assets/images/Background_pictures.png");
   background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1094,26 +1090,30 @@
 .pictures__content_images_block-one {
   position: relative;
   top: -4%;
+  width: 43%;
 }
 
 .pictures__content_images_block-two {
   position: relative;
   top: -9%;
-  left: 5%;
+  left: 4%;
+  width: 43%;
 }
 
 .pictures__content_images_block-three {
   position: relative;
+  width: 43%;
 }
 
 .pictures__content_images_block-four {
   position: relative;
   top: -30%;
-  left: 5%;
+  left: 4%;
+  width: 43%;
 }
 
 .pictures__content_images_img {
-  max-width: 354px;
+  max-width: 100%;
 }
 
 .design-project {
@@ -1448,7 +1448,7 @@
   margin-top: 1%;
 }
 
-.steps__img_photo {
+.steps__img img {
   width: 100%;
 }
 
@@ -1699,7 +1699,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 15px 28px;
+  margin: 3vh 3vh;
 }
 
 .clients__sheet_title_img {
@@ -2063,7 +2063,7 @@ input[placeholder] {
   opacity: 1;
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1100px) {
   .wrap {
     max-width: 1100px;
   }
@@ -2089,21 +2089,21 @@ input[placeholder] {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .navbar__switcher_item {
+  .navbar__switcher li {
     list-style-type: none;
   }
-  .navbar__switcher_item_link {
+  .navbar__switcher li a {
     text-decoration: none;
     font-family: "FuturaBookC", sans-serif;
     text-transform: uppercase;
     color: white;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 12px;
+    line-height: 14px;
   }
-  .navbar__switcher_item a.selected {
+  .navbar__switcher li a.selected {
     color: #E3B873;
   }
-  .navbar__switcher_item a:hover {
+  .navbar__switcher li a:hover {
     color: #E3B873;
   }
   .call-request {
@@ -2148,10 +2148,10 @@ input[placeholder] {
     left: 4.5%;
     z-index: 2;
   }
-  .about-us__content-text_header {
+  .about-us__content h2 {
     width: 75%;
   }
-  .about-us__content-text_paragraph {
+  .about-us__content p {
     position: relative;
     margin-top: 1%;
     width: 40%;
@@ -2236,9 +2236,6 @@ input[placeholder] {
     margin-top: 4%;
     overflow: hidden;
   }
-  .project__slider_photo_image1 {
-    width: 600px;
-  }
   .project__slider_photo_image2 {
     margin-left: 2%;
   }
@@ -2297,9 +2294,7 @@ input[placeholder] {
     margin: 0 14px;
   }
   .video__block_text {
-    width: 80%;
-    font-size: 18px;
-    line-height: 32px;
+    width: 60%;
   }
   .video__block_form {
     display: -webkit-box;
@@ -2346,24 +2341,28 @@ input[placeholder] {
     color: #181818;
   }
   .video__player {
+    width: 75%;
     position: relative;
-    padding-bottom: 0;
+    padding-bottom: 42.25%;
     margin-top: 7%;
     -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
   }
   .video__player_play {
-    width: 760px;
-    height: 424px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .video:after {
     content: '';
     width: 100%;
-    height: 588px;
+    height: 60%;
     background: white;
     position: absolute;
     left: 0;
-    top: 392px;
+    top: 40%;
     z-index: -1;
   }
   .measurement {
@@ -2430,10 +2429,10 @@ input[placeholder] {
     display: none;
   }
   .price__sheet_description {
-    width: 95%;
+    width: 90%;
   }
   .price__sheet_description_list {
-    padding-left: 28px;
+    padding-left: 10%;
   }
   .price__sheet_description_title {
     padding: 4% 0 0 6%;
@@ -2613,8 +2612,8 @@ input[placeholder] {
     margin-top: 5%;
   }
   .pictures__content_repair-styles_title {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 23px;
+    line-height: 34px;
   }
   .pictures__content_repair-styles_list {
     margin-top: 3%;
@@ -2629,31 +2628,7 @@ input[placeholder] {
   .pictures__content_images {
     width: 60%;
     margin-top: 2%;
-    margin-left: 2%;
     position: relative;
-  }
-  .pictures__content_images_block-one {
-    position: relative;
-    top: 0;
-    left: 10px;
-  }
-  .pictures__content_images_block-two {
-    position: relative;
-    top: 0;
-    left: 35px;
-  }
-  .pictures__content_images_block-three {
-    position: relative;
-    top: 20px;
-    left: 10px;
-  }
-  .pictures__content_images_block-four {
-    position: relative;
-    top: -155px;
-    left: 35px;
-  }
-  .pictures__content_images_img {
-    max-width: 221px;
   }
   .design-project {
     position: relative;
@@ -2745,7 +2720,7 @@ input[placeholder] {
     width: 90%;
     padding: 7%;
     margin-top: 6%;
-    margin-left: -20px;
+    margin-left: -12%;
     background-color: #E3B873;
     -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
             box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
@@ -2932,8 +2907,8 @@ input[placeholder] {
   .steps__img {
     margin-top: 1%;
   }
-  .steps__img_photo {
-    width: 576px;
+  .steps__img img {
+    width: 100%;
   }
   .team {
     position: relative;
@@ -3101,7 +3076,7 @@ input[placeholder] {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 930px;
+    height: 1060px;
     margin-top: 6%;
   }
   .clients__title_head {
@@ -3149,7 +3124,7 @@ input[placeholder] {
             justify-content: space-between;
   }
   .clients__sheet {
-    width: 32%;
+    width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3171,12 +3146,12 @@ input[placeholder] {
     margin: 3vh 3vh;
   }
   .clients__sheet_title_img {
-    width: 100px;
+    width: 100%;
     border-radius: 50%;
   }
   .clients__sheet_title_name {
     margin-top: 3vh;
-    margin-left: 0;
+    margin-left: -18px;
     font-family: "Yeseva One", cursive;
     font-size: 18px;
     line-height: 23px;
@@ -3195,7 +3170,7 @@ input[placeholder] {
     display: flex;
     position: relative;
     top: 4vh;
-    margin-top: -2px;
+    margin-top: 23%;
     width: 85%;
     height: 80px;
     background: #E3B873;
@@ -3494,7 +3469,7 @@ input[placeholder] {
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3517,7 +3492,6 @@ input[placeholder] {
   .logo h1 {
     font-size: 12px;
     line-height: 14px;
-    color: #E3B873;
   }
   .navbar {
     display: none;
@@ -3525,7 +3499,6 @@ input[placeholder] {
   .call-request {
     width: 28%;
     padding-top: 3px;
-    margin-right: 2px;
   }
   .call-request__phone {
     font-size: 12px;
@@ -3558,16 +3531,16 @@ input[placeholder] {
     left: 4.5%;
     z-index: 2;
   }
-  .about-us__content-text_header {
+  .about-us__content h2 {
     width: 90%;
     font-size: 23px;
     line-height: 132.83%;
     color: white;
   }
-  .about-us__content-text_header span {
+  .about-us__content h2 span {
     color: #E3B873;
   }
-  .about-us__content-text_paragraph {
+  .about-us__content p {
     margin-top: 1%;
     width: 82%;
     font-size: 18px;
@@ -3621,9 +3594,6 @@ input[placeholder] {
     text-align: center;
   }
   .project__content_head {
-    margin-left: 40px;
-  }
-  .project__content_head_title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3632,10 +3602,10 @@ input[placeholder] {
             align-items: center;
     margin-top: 0px;
   }
-  .project__content_head_title-info {
+  .project__content_head-info {
     margin: 0 11%;
   }
-  .project__content_head_title_header {
+  .project__content_head h2 {
     margin-top: 0px;
     text-align: center;
     width: 50%;
@@ -3643,12 +3613,11 @@ input[placeholder] {
     font-size: 22px;
     line-height: 138.6%;
   }
-  .project__content_head_title hr {
+  .project__content_head hr {
     display: none;
   }
   .project__content_text {
-    margin: 26px auto 0;
-    width: 90%;
+    margin-top: 26px;
     font-family: "FuturaBookC", sans-serif;
     font-size: 18px;
     line-height: 29px;
@@ -3687,11 +3656,11 @@ input[placeholder] {
     width: 45%;
     margin-top: 2%;
   }
-  .project__description_item_title {
+  .project__description_item h4 {
     font-size: 14px;
     line-height: 138.6%;
   }
-  .project__description_item_text {
+  .project__description_item p {
     line-height: 135.84%;
   }
   .project .project__arrow {
@@ -3804,45 +3773,6 @@ input[placeholder] {
   .measurement__content {
     height: auto;
   }
-  .checkbox-document {
-    width: 35px;
-    margin-right: 3%;
-    margin-top: -0.5%;
-    position: relative;
-  }
-  .checkbox-document label {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    background: #E3B873;
-  }
-  .checkbox-document label p {
-    width: 290px;
-    margin-top: 0;
-    margin-left: 30px;
-  }
-  .checkbox-document label:after {
-    content: '';
-    width: 10px;
-    height: 6px;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
-    background: transparent;
-    opacity: 0;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    z-index: 3;
-  }
-  .checkbox-document input[type=checkbox] {
-    visibility: hidden;
-  }
-  .checkbox-document input[type=checkbox]:checked + label:after {
-    opacity: 1;
-  }
   .price {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3851,7 +3781,7 @@ input[placeholder] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: -16%;
+    margin-top: -6%;
   }
   .price__sheet {
     width: 90%;
@@ -3872,7 +3802,7 @@ input[placeholder] {
     margin-top: -40%;
     left: 0;
     margin-left: 0;
-    width: 270px;
+    width: 75%;
     padding-left: 0;
     padding-top: 0;
   }
@@ -3881,12 +3811,10 @@ input[placeholder] {
   }
   .price__sheet_description_list {
     padding-left: 10%;
-    margin-bottom: 0;
   }
   .price__sheet_inputs {
-    position: relative;
-    margin-top: 50px;
-    top: 0;
+    top: -13%;
+    left: 0;
   }
   .price__sheet_input {
     padding: 5%;
@@ -4360,5 +4288,44 @@ input[placeholder] {
   .footer {
     display: none;
   }
+  .checkbox-document {
+    width: 35px;
+    margin-right: 3%;
+    margin-top: -0.5%;
+    position: relative;
+  }
+  .checkbox-document label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    background: #E3B873;
+  }
+  .checkbox-document label p {
+    width: 290px;
+    margin-top: 0;
+    margin-left: 30px;
+  }
+  .checkbox-document label:after {
+    content: '';
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    z-index: 3;
+  }
+  .checkbox-document input[type=checkbox] {
+    visibility: hidden;
+  }
+  .checkbox-document input[type=checkbox]:checked + label:after {
+    opacity: 1;
+  }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.min.css.map */
