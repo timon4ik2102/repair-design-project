@@ -1,0 +1,158 @@
+@mixin header-footer {
+    @include block_position;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background: $colormain;
+}
+
+@mixin head-foot-title {
+    font-family: $FuturaDemiC;
+    @include font_size;
+    letter-spacing: 0.25ex;
+    text-transform: uppercase;
+    color: $colorgold;
+}
+
+@mixin block_position {
+    display: $displayX;
+    justify-content: space-between;
+}
+
+@mixin font_size {
+    font-size: 1em;
+    line-height: 1.1em;
+}
+
+@mixin sammury_buttons {
+    width: 15.2%;
+    height: 74px;
+    font-family: $FuturaDemiC;
+    font-size: 13px;
+    line-height: 15px;
+    color: $colorwhite;
+}
+
+@mixin checkbox {
+    width: 35px;
+    margin-right: 3%;
+    margin-top: -0.5%;
+    position: $posrelative;
+
+    label {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: $posabsolute;
+        background: $colorgold;
+
+        p {
+            width: 290px;
+            margin-top: 0;
+            margin-left: 30px;
+        }
+
+        &:after {
+            content: '';
+            width: 10px;
+            height: 6px;
+            position: $posabsolute;
+            top: $fourpixels;
+            left: $fourpixels;
+            border-left: $borderwhitethree;
+            border-bottom: $borderwhitethree;
+            background: transparent;
+            opacity: 0;
+            transform: rotate(-45deg);
+            z-index: 3;
+        }
+    }
+
+    input[type=checkbox] {
+        visibility: hidden;
+
+        &:checked+label:after {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin underline {
+    width: 55px;
+    height: 0.5px;
+    background-color: $colorgold;
+    border: 1px solid $colorgold;
+}
+
+@mixin undertext {
+    font-family: $FuturaBook;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+}
+
+@mixin flex-relative {
+    position: $posrelative;
+    display: $displayX;
+
+}
+
+@mixin vertical_block {
+    display: $displayX;
+    flex-direction: column;
+}
+
+
+@mixin form-name {
+    font-family: $FuturaBook;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@mixin title_description {
+    font-family: $FuturaBook;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+
+@mixin title_head {
+    font-family: $Yeseva;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin icon_line {
+    width: 32px;
+    height: 0.5px;
+    margin-top: 1%;
+    background-color: $colorgold;
+    border: 1px solid $colorgold;
+}
+
+@mixin job_specialuty {
+    font-family: $Yeseva;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin names {
+    font-family: $Yeseva;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: $colordark;
+}
+
+@mixin counts_txt {
+    font-family: $Yeseva;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $colorwhite;
+}
